@@ -1,8 +1,29 @@
 :root{
+  --primario: #1073BA;
+  --secundario: #00DA55;
+  --gris: #3B3B3B;
+  --blanco: #FFFFFF;
+  --negro: #1F1F1F;
+  --grisClaro: #E1E1E1;
+
+  --separacion: 5rem;
+
   --fuentePrincipal: 'Roboto', sans-serif;
   --fuenteSecundaria: 'Lato', sans-serif;
 }
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Reset para rems  62.5% = 10 px de 16px */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
   font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
