@@ -49,7 +49,7 @@ h2{
   font-size: 3.6rem;
 }
 
-h1{
+h3{
   font-size: 2.8rem;
 }
 
@@ -217,3 +217,135 @@ img{
   font-size: 2rem;
   line-height: 2;
 }
+/*************/
+/* * Modelos */
+/*************/
+.modelos{
+  padding: var(--separacion) 0; 
+}
+
+.header-modelos{
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+
+.listado-modelos{
+  display: flex;
+  flex-direction: column-reverse;
+  
+}
+@media (min-width: 1024px) {
+  .listado-modelos{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+.modelo{
+  background-color: var(--grisClaro);
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+  color: var(--primario);
+  border-radius: 2rem;
+  min-height: 15rem;
+  background-repeat: no-repeat;
+  background-position: 93% center;
+  background-size: 10rem;
+  flex-direction: column;
+  justify-content: center;
+  transition: scale background-size, .3s;
+}
+.modelo:hover{
+  transform: scale(1.1);
+  background-size: 30rem;
+}
+.modelo:first-of-type{
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .modelo{
+    background-size: 15rem;
+  }
+  .modelo:last-of-type{
+    background-size: 20rem;
+
+  }
+}
+@media (min-width: 1024px) {
+  .modelo{
+    margin-bottom: 0;
+    min-height: 25rem;
+    background-size: 20rem;
+  }
+  .modelo:last-of-type{
+    background-position: center 95%;
+    background-size: 30rem;
+    padding-left: 0;
+  }
+}
+.modelo h3{
+  font-size: 2.4rem;
+}
+.modelo .precio{
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0;
+}
+@media (min-width: 768px) {
+  .modelo h3{
+    font-size: 4.5rem;
+  }
+  .modelo .precio{
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .modelo h3{
+    font-size: 4.0rem;
+  }
+  .modelo .precio{
+    font-size: 5rem;
+  }
+}
+.modelo-x{
+  background-image: url(../img/modelo-x.svg);
+}
+.modelo-y{
+  background-image: url(../img/modelo-y.svg);
+}
+.modelo-z{
+  background-color: var(--primario);
+  color: var(--blanco);
+  background-image: url(../img/modelo-z.svg);
+  background-size: 12rem;
+}
+
+.modelo-z .precio{
+  font-size: 4.5rem;
+}
+@media (min-width: 768px) {
+  .modelo-z h3{
+    font-size: 5rem;
+  }
+  .modelo-z .precio{
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modelo-z{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+
+}
+
+
+
+
