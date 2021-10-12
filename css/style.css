@@ -217,9 +217,11 @@ img{
   font-size: 2rem;
   line-height: 2;
 }
+
 /*************/
 /* * Modelos */
 /*************/
+
 .modelos{
   padding: var(--separacion) 0; 
 }
@@ -342,10 +344,32 @@ img{
     justify-content: flex-start;
     text-align: center;
   }
+}
 
+/*************/
+/* * Modelos */
+/*************/
+
+.newsletter{
 
 }
 
+.contenido-newsletter{
 
+}
 
+.texto-newsletter{
+  
+}
+
+.formulario{
+
+}
+
+.formulario input[type="text"]{
+
+}
+.formulario input[type="submit"]{
+
+}
 
