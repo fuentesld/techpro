@@ -164,7 +164,47 @@ img{
 /******************/
 /** Sobre Techpro */
 /******************/
-.sobre-tech{
+.sobre-tech-imagen{
+  min-height: 20rem;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: right center;
+}
+.notavif.notwebp .sobre-tech-imagen{
+  background-image: url(../img/imagen-mujer.jpg);
+}
+.webp .sobre-tech-imagen{
+  background-image: url(../img/imagen-mujer.webp);
+}
+.avif .sobre-tech-imagen{
+  background-image: url(../img/imagen-mujer.avif);
+}
+@media (min-width: 768px) {
+  .sobre-tech-imagen{
+    min-height: 35rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sobre-tech-imagen{
+    min-height: 40rem;
+  }
+}
+
+.sobre-tech-texto{
+  background-color: var(--primario);
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sobre-tech-texto h2{
+  font-size: 4rem;
+}
+.sobre-tech-texto p{
+  font-size: 2rem;
+  line-height: 2;
+}
+/* .sobre-tech{
   background-position: right;
   background-repeat: repeat, no-repeat;
   background-size: 100%, 150rem;
@@ -226,7 +266,7 @@ img{
 .sobre-tech-texto p{
   font-size: 2rem;
   line-height: 2;
-}
+} */
 
 /*************/
 /* * Modelos */
@@ -359,10 +399,6 @@ img{
 /****************/
 /* * NewsLetter */
 /****************/
-
-.newsletter{
-
-}
 
 @media (min-width: 1024px) {
   .contenido-newsletter{
